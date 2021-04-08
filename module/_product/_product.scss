@@ -1,0 +1,196 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 390px;
+  height: 600px;
+  line-height: 1.35;
+  padding: 30px 25px 30px 0px;
+  border: 1px solid $link;
+  position: relative;
+  &__img {
+    max-width: 305px;
+    width: 100%;
+    height: 338px;
+    object-fit: contain;
+    object-position: center center;
+    margin-bottom: 50px;
+  }
+  &__title {
+    max-width: 290px;
+    @extend %OpenSans-700;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  &__info {
+    max-width: 289px;
+    width: 100%;
+    margin-top: auto;
+  }
+  &__origin {
+    @extend %OpenSans-400;
+    font-size: 18px;
+    margin-bottom: 9px;
+  }
+  &__cost {
+    @extend %OpenSans-600;
+    font-size: 22px;    
+  }
+  &__btn {
+    width: 32px;
+    height: 32px;
+    outline: none;
+    position: absolute;
+    right: 28px;
+    transition: all .4s;
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+    &--added {
+      path {
+        fill: $link-hover;
+      }
+    }
+  }
+  &__like {
+    top: 50px;
+  }
+  &__bag {
+    bottom: 32px;
+  }
+}
+// ---------------------------------------------------1360-----------------------------------------------------
+@media (max-width: 1360px) {
+  .product {
+    height: 565px;
+    padding: 20px 25px 20px 10px;
+    &__img {
+      margin-bottom: 35px;
+    }
+    &__like {
+      top: 40px;
+    }
+    &__bag {
+      bottom: 22px;
+    }
+  }
+}
+// ---------------------------------------------------1160-----------------------------------------------------
+@media (max-width: 1160px) {
+  .product {
+    height: 502px;
+    padding: 10px 20px 15px 15px;
+    &__img {
+      height: 300px;
+      margin-bottom: 25px;
+    }
+    &__btn {
+      right: 20px;
+    }
+    &__like {
+      top: 30px;
+    }
+    &__bag {
+      bottom: 17px;
+    }
+  }
+}
+// ---------------------------------------------------1060-----------------------------------------------------
+@media (max-width: 1060px) {
+  .product {
+    height: 447px;
+    padding: 10px 15px 15px 15px;
+    &__img {
+      height: 245px;
+    }
+    &__btn {
+      right: 15px;
+    }
+  }
+}
+// ---------------------------------------------------960-----------------------------------------------------
+@media (max-width: 960px) {
+  .product {
+    &__btn {
+      right: 28px;
+    }
+  }
+}
+// ---------------------------------------------------860-----------------------------------------------------
+@media (max-width: 860px) {
+  .product {
+    height: 425px;
+    &__img {
+      height: 230px;
+    }
+    &__title {
+      @include OpenSans-600;
+    }
+    &__origin {
+      margin-bottom: 5px;
+    }
+    &__cost {
+      font-size: 21px;
+    }
+    &__btn {
+      right: 20px;
+    }
+  }
+}
+// ---------------------------------------------------760-----------------------------------------------------
+@media (max-width: 760px) {
+  .product {
+    height: 415px;
+    &__img {
+      height: 225px;
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 19px;
+    }
+    &__origin {
+      margin-bottom: 2px;
+    }
+    &__cost {
+      font-size: 19px;
+    }
+    &__btn {
+      right: 12px;
+    }
+    &__like {
+      top: 20px;
+    }
+  }
+}
+// ---------------------------------------------------560-----------------------------------------------------
+@media (max-width: 560px) {
+  .product {
+    max-width: 100%;
+    height: 395px;
+    padding: 5px 15px 10px 12px;
+    &__img {
+      height: 245px;
+    }
+    &__title {
+      max-width: 100%;
+    }
+    &__info {
+      max-width: 100%;
+    }
+    &__bag {
+      bottom: 15px;
+    }
+  }
+}
+// ---------------------------------------------------420-----------------------------------------------------
+@media (max-width: 420px) {
+  .product {
+    &__img {
+      height: 230px;
+    }
+  }
+}

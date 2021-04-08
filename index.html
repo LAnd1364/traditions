@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tradition</title>
+   <link rel="stylesheet" href="css/index.min.css">
+</head>
+<body>
+   
+   <header class="header" id="home">
+  <div class="container">
+    <div class="header__inner">
+      <nav class="menu">
+        <button class="menu__btn" id="menu-btn">
+          <span class="menu__btn-line"></span>
+          <span class="menu__btn-line"></span>
+          <span class="menu__btn-line"></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__item-link" href="#catalog">Catalog</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#set">Set</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#blog">Blog</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#reviews">Reviews</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#shop">Shop</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="logo" href="#home">
+        <img clsss="logo__img" src="images/logo.svg" alt="logo">
+      </a>
+      <div class="header__contacts">
+        <a class="header__address" href="#map">
+          <span class="header__address-hint">show on a map</span>
+          Kyiv, st. Druzhba 7
+        </a>
+        <a class="phone" href="tel:+380500505050">+380500505050</a>
+      </div>
+      <div class="header__usernav">
+        <a class="header__usernav-link" href="#search">
+          <img class="header__usernav-img" src="images/icons/search.svg" alt="search form">
+        </a>
+        <a class="header__usernav-link" href="#">
+          <img class="header__usernav-img" src="images/icons/heart.svg" alt="liked">
+        </a>
+        <a class="header__usernav-link" href="#">
+          <img class="header__usernav-img" src="images/icons/shopping-bag.svg" alt="shopping-bag">
+        </a>
+        <a class="header__usernav-link" href="#">
+          <img class="header__usernav-img" src="images/icons/user.svg" alt="user profile">
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+      <!--
+         <div class="up-wrap">
+         <button class="up" id="up" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 50 50" version="1.1">
+               <path fill="#243f4d" fill-rule="evenodd" d="M 28.050781 45.191406 L 21.816406 45.191406 C 20.101562 45.191406 18.699219 43.789062 18.699219  42.078125 L 18.699219 23.375 L 13.089844 23.375 C 11.84375 23.375 10.75 22.59375 10.285156 21.507812 C 9.820312 20.414062 9.972656 19.011719  10.90625 18.078125 L 23.84375 5.140625 C 24.46875 4.519531 25.398438 4.519531 26.023438 5.140625 L 38.960938 18.078125 C 39.894531 19.011719  40.046875 20.257812 39.582031 21.507812 C 39.117188 22.75 38.023438 23.375 36.777344 23.375 L 31.164062 23.375 L   31.164062 42.078125 C 31. 164062 43.789062 29.765625 45.191406 28.050781 45.191406 Z M 28.050781 45.191406 "/>
+            </svg>
+         </button>
+         </div>
+         -->
+
+   <main class="main">
+
+    <div class="invite">
+         <div class="container">
+            <div class="invite__inner">
+               <div class="invite__content">
+                  <h1 class="invite__title">tea ceremony</h1>
+                  <p class="invite__text">PLAN YOUR VISIT</br>TO A
+                     <span>Tea ceremony master class</span>
+                  </p>
+                  <p class="invite__text--adapt">PLAN YOUR VISIT TO A
+                     <span>Tea ceremony master class</span>
+                  </p>
+                  <a class="invite__link" href="#">
+                     <div class="arrow-right">
+   <span class="arrow-right__angle"></span>
+</div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <sectiom class="catalog" id="catalog">
+         <div class="container">
+            <div class="catalog__inner">
+               <h2 class="catalog__title title">Catalog</h2>
+               <div class="product-slider">
+  <div class="product-wrap">
+  <div class="product">
+    <img class="product__img" src="images/product/1.jpg" alt="product">
+    <h4 class="product__title">Shu Puer pressed tea "Ban Zhang Gong Ting" 2017 No. 150</h4>
+    <div class="product__info">
+      <div class="product__origin">
+        Country: 
+        <span>China</span>
+      </div>
+      <div class="product__cost">
+        <span class="product__price">140 </span>UAH / 
+        <span class="product__weight">50 </span>g
+      </div>
+    </div>
+    <button class="product__btn product__like" type="submit">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.5 23.6092C12.1441 23.6092 11.8009 23.4802 11.5335 23.246C10.5236 22.3629 9.54989 21.533 8.69082 20.801L8.68643 20.7972C6.16778 18.6508 3.99284 16.7973 2.47955 14.9714C0.787924 12.9301 0 10.9947 0 8.88042C0 6.82621 0.704382 4.93107 1.98326 3.54385C3.27739 2.14024 5.05313 1.36719 6.98393 1.36719C8.42703 1.36719 9.74863 1.82343 10.9119 2.72312C11.499 3.17726 12.0312 3.73306 12.5 4.38137C12.969 3.73306 13.501 3.17726 14.0882 2.72312C15.2515 1.82343 16.5731 1.36719 18.0162 1.36719C19.9468 1.36719 21.7228 2.14024 23.0169 3.54385C24.2958 4.93107 25 6.82621 25 8.88042C25 10.9947 24.2122 12.9301 22.5206 14.9712C21.0073 16.7973 18.8326 18.6506 16.3143 20.7968C15.4537 21.53 14.4785 22.3612 13.4662 23.2464C13.199 23.4802 12.8557 23.6092 12.5 23.6092ZM6.98393 2.83165C5.46702 2.83165 4.07352 3.43704 3.05976 4.53644C2.03094 5.65243 1.46427 7.19509 1.46427 8.88042C1.46427 10.6586 2.12516 12.249 3.60698 14.0369C5.03921 15.7652 7.16952 17.5806 9.6361 19.6827L9.64068 19.6865C10.503 20.4214 11.4805 21.2545 12.4979 22.1441C13.5214 21.2528 14.5004 20.4184 15.3644 19.6823C17.8308 17.5802 19.9609 15.7652 21.3932 14.0369C22.8748 12.249 23.5357 10.6586 23.5357 8.88042C23.5357 7.19509 22.969 5.65243 21.9402 4.53644C20.9266 3.43704 19.5329 2.83165 18.0162 2.83165C16.905 2.83165 15.8848 3.18489 14.9839 3.88145C14.1811 4.50249 13.6219 5.28755 13.294 5.83687C13.1254 6.11935 12.8286 6.28796 12.5 6.28796C12.1713 6.28796 11.8746 6.11935 11.7059 5.83687C11.3783 5.28755 10.819 4.50249 10.016 3.88145C9.1152 3.18489 8.09496 2.83165 6.98393 2.83165Z" fill="#1A1919"/>
+</svg>
+    </button>
+    <button class="product__btn product__bag" type="submit">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.3425 24.1783L21.4424 6.08386C21.4025 5.70506 21.0833 5.41743 20.7024 5.41743H17.131V4.60319C17.131 2.06508 15.066 0 12.5279 0C9.98957 0 7.92448 2.06508 7.92448 4.60319V5.41743H4.35317C3.97227 5.41743 3.65298 5.70506 3.61312 6.08386L1.71302 24.1783C1.69109 24.3879 1.75918 24.5971 1.90013 24.7539C2.04128 24.9105 2.24231 25 2.45307 25H22.6023C22.8132 25 23.0143 24.9105 23.1552 24.7539C23.2965 24.5971 23.3644 24.3879 23.3425 24.1783ZM9.41259 4.60319C9.41259 2.88562 10.8101 1.48811 12.5279 1.48811C14.2454 1.48811 15.6429 2.88562 15.6429 4.60319V5.41743H9.41259V4.60319ZM3.27934 23.5118L5.02322 6.90554H7.92448V8.54529C7.92448 8.95613 8.2577 9.28934 8.66854 9.28934C9.07938 9.28934 9.41259 8.95613 9.41259 8.54529V6.90554H15.6429V8.54529C15.6429 8.95613 15.9761 9.28934 16.387 9.28934C16.7978 9.28934 17.131 8.95613 17.131 8.54529V6.90554H20.0323L21.7762 23.5118H3.27934Z" fill="#1A1919"/>
+</svg>
+    </button>
+  </div>
+</div>
+
+<div class="product-wrap">
+  <div class="product">
+    <img class="product__img" src="images/product/2.jpg" alt="product">
+    <h4 class="product__title">Cha Zhuan pressed tea Shu Puer 2013 No. 180</h4>
+    <div class="product__info">
+      <div class="product__origin">
+        Country: 
+        <span>China</span>
+      </div>
+      <div class="product__cost">
+        <span class="product__price">160 </span>UAH / 
+        <span class="product__weight">50 </span>g
+      </div>
+    </div>
+    <button class="product__btn product__like" type="submit">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.5 23.6092C12.1441 23.6092 11.8009 23.4802 11.5335 23.246C10.5236 22.3629 9.54989 21.533 8.69082 20.801L8.68643 20.7972C6.16778 18.6508 3.99284 16.7973 2.47955 14.9714C0.787924 12.9301 0 10.9947 0 8.88042C0 6.82621 0.704382 4.93107 1.98326 3.54385C3.27739 2.14024 5.05313 1.36719 6.98393 1.36719C8.42703 1.36719 9.74863 1.82343 10.9119 2.72312C11.499 3.17726 12.0312 3.73306 12.5 4.38137C12.969 3.73306 13.501 3.17726 14.0882 2.72312C15.2515 1.82343 16.5731 1.36719 18.0162 1.36719C19.9468 1.36719 21.7228 2.14024 23.0169 3.54385C24.2958 4.93107 25 6.82621 25 8.88042C25 10.9947 24.2122 12.9301 22.5206 14.9712C21.0073 16.7973 18.8326 18.6506 16.3143 20.7968C15.4537 21.53 14.4785 22.3612 13.4662 23.2464C13.199 23.4802 12.8557 23.6092 12.5 23.6092ZM6.98393 2.83165C5.46702 2.83165 4.07352 3.43704 3.05976 4.53644C2.03094 5.65243 1.46427 7.19509 1.46427 8.88042C1.46427 10.6586 2.12516 12.249 3.60698 14.0369C5.03921 15.7652 7.16952 17.5806 9.6361 19.6827L9.64068 19.6865C10.503 20.4214 11.4805 21.2545 12.4979 22.1441C13.5214 21.2528 14.5004 20.4184 15.3644 19.6823C17.8308 17.5802 19.9609 15.7652 21.3932 14.0369C22.8748 12.249 23.5357 10.6586 23.5357 8.88042C23.5357 7.19509 22.969 5.65243 21.9402 4.53644C20.9266 3.43704 19.5329 2.83165 18.0162 2.83165C16.905 2.83165 15.8848 3.18489 14.9839 3.88145C14.1811 4.50249 13.6219 5.28755 13.294 5.83687C13.1254 6.11935 12.8286 6.28796 12.5 6.28796C12.1713 6.28796 11.8746 6.11935 11.7059 5.83687C11.3783 5.28755 10.819 4.50249 10.016 3.88145C9.1152 3.18489 8.09496 2.83165 6.98393 2.83165Z" fill="#1A1919"/>
+</svg>
+    </button>
+    <button class="product__btn product__bag" type="submit">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.3425 24.1783L21.4424 6.08386C21.4025 5.70506 21.0833 5.41743 20.7024 5.41743H17.131V4.60319C17.131 2.06508 15.066 0 12.5279 0C9.98957 0 7.92448 2.06508 7.92448 4.60319V5.41743H4.35317C3.97227 5.41743 3.65298 5.70506 3.61312 6.08386L1.71302 24.1783C1.69109 24.3879 1.75918 24.5971 1.90013 24.7539C2.04128 24.9105 2.24231 25 2.45307 25H22.6023C22.8132 25 23.0143 24.9105 23.1552 24.7539C23.2965 24.5971 23.3644 24.3879 23.3425 24.1783ZM9.41259 4.60319C9.41259 2.88562 10.8101 1.48811 12.5279 1.48811C14.2454 1.48811 15.6429 2.88562 15.6429 4.60319V5.41743H9.41259V4.60319ZM3.27934 23.5118L5.02322 6.90554H7.92448V8.54529C7.92448 8.95613 8.2577 9.28934 8.66854 9.28934C9.07938 9.28934 9.41259 8.95613 9.41259 8.54529V6.90554H15.6429V8.54529C15.6429 8.95613 15.9761 9.28934 16.387 9.28934C16.7978 9.28934 17.131 8.95613 17.131 8.54529V6.90554H20.0323L21.7762 23.5118H3.27934Z" fill="#1A1919"/>
+</svg>
+    </button>
+  </div>
+</div>
+
+<div class="product-wrap">
+  <div class="product">
+    <img class="product__img" src="images/product/3.jpg" alt="product">
+    <h4 class="product__title">The Story of One Leaf, Shu Puer Pressed Tea No. 520</h4>
+    <div class="product__info">
+      <div class="product__origin">
+        Country: 
+        <span>China</span>
+      </div>
+      <div class="product__cost">
+        <span class="product__price">446 </span>UAH / 
+        <span class="product__weight">50 </span>g
+      </div>
+    </div>
+    <button class="product__btn product__like" type="submit">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.5 23.6092C12.1441 23.6092 11.8009 23.4802 11.5335 23.246C10.5236 22.3629 9.54989 21.533 8.69082 20.801L8.68643 20.7972C6.16778 18.6508 3.99284 16.7973 2.47955 14.9714C0.787924 12.9301 0 10.9947 0 8.88042C0 6.82621 0.704382 4.93107 1.98326 3.54385C3.27739 2.14024 5.05313 1.36719 6.98393 1.36719C8.42703 1.36719 9.74863 1.82343 10.9119 2.72312C11.499 3.17726 12.0312 3.73306 12.5 4.38137C12.969 3.73306 13.501 3.17726 14.0882 2.72312C15.2515 1.82343 16.5731 1.36719 18.0162 1.36719C19.9468 1.36719 21.7228 2.14024 23.0169 3.54385C24.2958 4.93107 25 6.82621 25 8.88042C25 10.9947 24.2122 12.9301 22.5206 14.9712C21.0073 16.7973 18.8326 18.6506 16.3143 20.7968C15.4537 21.53 14.4785 22.3612 13.4662 23.2464C13.199 23.4802 12.8557 23.6092 12.5 23.6092ZM6.98393 2.83165C5.46702 2.83165 4.07352 3.43704 3.05976 4.53644C2.03094 5.65243 1.46427 7.19509 1.46427 8.88042C1.46427 10.6586 2.12516 12.249 3.60698 14.0369C5.03921 15.7652 7.16952 17.5806 9.6361 19.6827L9.64068 19.6865C10.503 20.4214 11.4805 21.2545 12.4979 22.1441C13.5214 21.2528 14.5004 20.4184 15.3644 19.6823C17.8308 17.5802 19.9609 15.7652 21.3932 14.0369C22.8748 12.249 23.5357 10.6586 23.5357 8.88042C23.5357 7.19509 22.969 5.65243 21.9402 4.53644C20.9266 3.43704 19.5329 2.83165 18.0162 2.83165C16.905 2.83165 15.8848 3.18489 14.9839 3.88145C14.1811 4.50249 13.6219 5.28755 13.294 5.83687C13.1254 6.11935 12.8286 6.28796 12.5 6.28796C12.1713 6.28796 11.8746 6.11935 11.7059 5.83687C11.3783 5.28755 10.819 4.50249 10.016 3.88145C9.1152 3.18489 8.09496 2.83165 6.98393 2.83165Z" fill="#1A1919"/>
+</svg>
+    </button>
+    <button class="product__btn product__bag" type="submit">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.3425 24.1783L21.4424 6.08386C21.4025 5.70506 21.0833 5.41743 20.7024 5.41743H17.131V4.60319C17.131 2.06508 15.066 0 12.5279 0C9.98957 0 7.92448 2.06508 7.92448 4.60319V5.41743H4.35317C3.97227 5.41743 3.65298 5.70506 3.61312 6.08386L1.71302 24.1783C1.69109 24.3879 1.75918 24.5971 1.90013 24.7539C2.04128 24.9105 2.24231 25 2.45307 25H22.6023C22.8132 25 23.0143 24.9105 23.1552 24.7539C23.2965 24.5971 23.3644 24.3879 23.3425 24.1783ZM9.41259 4.60319C9.41259 2.88562 10.8101 1.48811 12.5279 1.48811C14.2454 1.48811 15.6429 2.88562 15.6429 4.60319V5.41743H9.41259V4.60319ZM3.27934 23.5118L5.02322 6.90554H7.92448V8.54529C7.92448 8.95613 8.2577 9.28934 8.66854 9.28934C9.07938 9.28934 9.41259 8.95613 9.41259 8.54529V6.90554H15.6429V8.54529C15.6429 8.95613 15.9761 9.28934 16.387 9.28934C16.7978 9.28934 17.131 8.95613 17.131 8.54529V6.90554H20.0323L21.7762 23.5118H3.27934Z" fill="#1A1919"/>
+</svg>
+    </button>
+  </div>
+</div>
+
+<div class="product-wrap">
+  <div class="product">
+    <img class="product__img" src="images/product/4.jpg" alt="product">
+    <h4 class="product__title">Loose Shu Puer tea in tangerine No. 200</h4>
+    <div class="product__info">
+      <div class="product__origin">
+        Country: 
+        <span>China</span>
+      </div>
+      <div class="product__cost">
+        <span class="product__price">170 </span>UAH / 
+        <span class="product__weight">50 </span>g
+      </div>
+    </div>
+    <button class="product__btn product__like" type="submit">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.5 23.6092C12.1441 23.6092 11.8009 23.4802 11.5335 23.246C10.5236 22.3629 9.54989 21.533 8.69082 20.801L8.68643 20.7972C6.16778 18.6508 3.99284 16.7973 2.47955 14.9714C0.787924 12.9301 0 10.9947 0 8.88042C0 6.82621 0.704382 4.93107 1.98326 3.54385C3.27739 2.14024 5.05313 1.36719 6.98393 1.36719C8.42703 1.36719 9.74863 1.82343 10.9119 2.72312C11.499 3.17726 12.0312 3.73306 12.5 4.38137C12.969 3.73306 13.501 3.17726 14.0882 2.72312C15.2515 1.82343 16.5731 1.36719 18.0162 1.36719C19.9468 1.36719 21.7228 2.14024 23.0169 3.54385C24.2958 4.93107 25 6.82621 25 8.88042C25 10.9947 24.2122 12.9301 22.5206 14.9712C21.0073 16.7973 18.8326 18.6506 16.3143 20.7968C15.4537 21.53 14.4785 22.3612 13.4662 23.2464C13.199 23.4802 12.8557 23.6092 12.5 23.6092ZM6.98393 2.83165C5.46702 2.83165 4.07352 3.43704 3.05976 4.53644C2.03094 5.65243 1.46427 7.19509 1.46427 8.88042C1.46427 10.6586 2.12516 12.249 3.60698 14.0369C5.03921 15.7652 7.16952 17.5806 9.6361 19.6827L9.64068 19.6865C10.503 20.4214 11.4805 21.2545 12.4979 22.1441C13.5214 21.2528 14.5004 20.4184 15.3644 19.6823C17.8308 17.5802 19.9609 15.7652 21.3932 14.0369C22.8748 12.249 23.5357 10.6586 23.5357 8.88042C23.5357 7.19509 22.969 5.65243 21.9402 4.53644C20.9266 3.43704 19.5329 2.83165 18.0162 2.83165C16.905 2.83165 15.8848 3.18489 14.9839 3.88145C14.1811 4.50249 13.6219 5.28755 13.294 5.83687C13.1254 6.11935 12.8286 6.28796 12.5 6.28796C12.1713 6.28796 11.8746 6.11935 11.7059 5.83687C11.3783 5.28755 10.819 4.50249 10.016 3.88145C9.1152 3.18489 8.09496 2.83165 6.98393 2.83165Z" fill="#1A1919"/>
+</svg>
+    </button>
+    <button class="product__btn product__bag" type="submit">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.3425 24.1783L21.4424 6.08386C21.4025 5.70506 21.0833 5.41743 20.7024 5.41743H17.131V4.60319C17.131 2.06508 15.066 0 12.5279 0C9.98957 0 7.92448 2.06508 7.92448 4.60319V5.41743H4.35317C3.97227 5.41743 3.65298 5.70506 3.61312 6.08386L1.71302 24.1783C1.69109 24.3879 1.75918 24.5971 1.90013 24.7539C2.04128 24.9105 2.24231 25 2.45307 25H22.6023C22.8132 25 23.0143 24.9105 23.1552 24.7539C23.2965 24.5971 23.3644 24.3879 23.3425 24.1783ZM9.41259 4.60319C9.41259 2.88562 10.8101 1.48811 12.5279 1.48811C14.2454 1.48811 15.6429 2.88562 15.6429 4.60319V5.41743H9.41259V4.60319ZM3.27934 23.5118L5.02322 6.90554H7.92448V8.54529C7.92448 8.95613 8.2577 9.28934 8.66854 9.28934C9.07938 9.28934 9.41259 8.95613 9.41259 8.54529V6.90554H15.6429V8.54529C15.6429 8.95613 15.9761 9.28934 16.387 9.28934C16.7978 9.28934 17.131 8.95613 17.131 8.54529V6.90554H20.0323L21.7762 23.5118H3.27934Z" fill="#1A1919"/>
+</svg>
+    </button>
+  </div>
+</div>
+
+<div class="product-wrap">
+  <div class="product">
+    <img class="product__img" src="images/product/5.jpg" alt="product">
+    <h4 class="product__title">Qi Zi Bing Lao Hong Zhu Hong tea Shu Puer 1995 No. 3200</h4>
+    <div class="product__info">
+      <div class="product__origin">
+        Country: 
+        <span>China</span>
+      </div>
+      <div class="product__cost">
+        <span class="product__price">2560 </span>UAH / 
+        <span class="product__weight">50 </span>g
+      </div>
+    </div>
+    <button class="product__btn product__like" type="submit">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.5 23.6092C12.1441 23.6092 11.8009 23.4802 11.5335 23.246C10.5236 22.3629 9.54989 21.533 8.69082 20.801L8.68643 20.7972C6.16778 18.6508 3.99284 16.7973 2.47955 14.9714C0.787924 12.9301 0 10.9947 0 8.88042C0 6.82621 0.704382 4.93107 1.98326 3.54385C3.27739 2.14024 5.05313 1.36719 6.98393 1.36719C8.42703 1.36719 9.74863 1.82343 10.9119 2.72312C11.499 3.17726 12.0312 3.73306 12.5 4.38137C12.969 3.73306 13.501 3.17726 14.0882 2.72312C15.2515 1.82343 16.5731 1.36719 18.0162 1.36719C19.9468 1.36719 21.7228 2.14024 23.0169 3.54385C24.2958 4.93107 25 6.82621 25 8.88042C25 10.9947 24.2122 12.9301 22.5206 14.9712C21.0073 16.7973 18.8326 18.6506 16.3143 20.7968C15.4537 21.53 14.4785 22.3612 13.4662 23.2464C13.199 23.4802 12.8557 23.6092 12.5 23.6092ZM6.98393 2.83165C5.46702 2.83165 4.07352 3.43704 3.05976 4.53644C2.03094 5.65243 1.46427 7.19509 1.46427 8.88042C1.46427 10.6586 2.12516 12.249 3.60698 14.0369C5.03921 15.7652 7.16952 17.5806 9.6361 19.6827L9.64068 19.6865C10.503 20.4214 11.4805 21.2545 12.4979 22.1441C13.5214 21.2528 14.5004 20.4184 15.3644 19.6823C17.8308 17.5802 19.9609 15.7652 21.3932 14.0369C22.8748 12.249 23.5357 10.6586 23.5357 8.88042C23.5357 7.19509 22.969 5.65243 21.9402 4.53644C20.9266 3.43704 19.5329 2.83165 18.0162 2.83165C16.905 2.83165 15.8848 3.18489 14.9839 3.88145C14.1811 4.50249 13.6219 5.28755 13.294 5.83687C13.1254 6.11935 12.8286 6.28796 12.5 6.28796C12.1713 6.28796 11.8746 6.11935 11.7059 5.83687C11.3783 5.28755 10.819 4.50249 10.016 3.88145C9.1152 3.18489 8.09496 2.83165 6.98393 2.83165Z" fill="#1A1919"/>
+</svg>
+    </button>
+    <button class="product__btn product__bag" type="submit">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.3425 24.1783L21.4424 6.08386C21.4025 5.70506 21.0833 5.41743 20.7024 5.41743H17.131V4.60319C17.131 2.06508 15.066 0 12.5279 0C9.98957 0 7.92448 2.06508 7.92448 4.60319V5.41743H4.35317C3.97227 5.41743 3.65298 5.70506 3.61312 6.08386L1.71302 24.1783C1.69109 24.3879 1.75918 24.5971 1.90013 24.7539C2.04128 24.9105 2.24231 25 2.45307 25H22.6023C22.8132 25 23.0143 24.9105 23.1552 24.7539C23.2965 24.5971 23.3644 24.3879 23.3425 24.1783ZM9.41259 4.60319C9.41259 2.88562 10.8101 1.48811 12.5279 1.48811C14.2454 1.48811 15.6429 2.88562 15.6429 4.60319V5.41743H9.41259V4.60319ZM3.27934 23.5118L5.02322 6.90554H7.92448V8.54529C7.92448 8.95613 8.2577 9.28934 8.66854 9.28934C9.07938 9.28934 9.41259 8.95613 9.41259 8.54529V6.90554H15.6429V8.54529C15.6429 8.95613 15.9761 9.28934 16.387 9.28934C16.7978 9.28934 17.131 8.95613 17.131 8.54529V6.90554H20.0323L21.7762 23.5118H3.27934Z" fill="#1A1919"/>
+</svg>
+    </button>
+  </div>
+</div>
+
+<div class="product-wrap">
+  <div class="product">
+    <img class="product__img" src="images/product/6.jpg" alt="product">
+    <h4 class="product__title">Show Mei Bing from Zhen He white pressed tea No. 600</h4>
+    <div class="product__info">
+      <div class="product__origin">
+        Country: 
+        <span>China</span>
+      </div>
+      <div class="product__cost">
+        <span class="product__price">480 </span>UAH / 
+        <span class="product__weight">50 </span>g
+      </div>
+    </div>
+    <button class="product__btn product__like" type="submit">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.5 23.6092C12.1441 23.6092 11.8009 23.4802 11.5335 23.246C10.5236 22.3629 9.54989 21.533 8.69082 20.801L8.68643 20.7972C6.16778 18.6508 3.99284 16.7973 2.47955 14.9714C0.787924 12.9301 0 10.9947 0 8.88042C0 6.82621 0.704382 4.93107 1.98326 3.54385C3.27739 2.14024 5.05313 1.36719 6.98393 1.36719C8.42703 1.36719 9.74863 1.82343 10.9119 2.72312C11.499 3.17726 12.0312 3.73306 12.5 4.38137C12.969 3.73306 13.501 3.17726 14.0882 2.72312C15.2515 1.82343 16.5731 1.36719 18.0162 1.36719C19.9468 1.36719 21.7228 2.14024 23.0169 3.54385C24.2958 4.93107 25 6.82621 25 8.88042C25 10.9947 24.2122 12.9301 22.5206 14.9712C21.0073 16.7973 18.8326 18.6506 16.3143 20.7968C15.4537 21.53 14.4785 22.3612 13.4662 23.2464C13.199 23.4802 12.8557 23.6092 12.5 23.6092ZM6.98393 2.83165C5.46702 2.83165 4.07352 3.43704 3.05976 4.53644C2.03094 5.65243 1.46427 7.19509 1.46427 8.88042C1.46427 10.6586 2.12516 12.249 3.60698 14.0369C5.03921 15.7652 7.16952 17.5806 9.6361 19.6827L9.64068 19.6865C10.503 20.4214 11.4805 21.2545 12.4979 22.1441C13.5214 21.2528 14.5004 20.4184 15.3644 19.6823C17.8308 17.5802 19.9609 15.7652 21.3932 14.0369C22.8748 12.249 23.5357 10.6586 23.5357 8.88042C23.5357 7.19509 22.969 5.65243 21.9402 4.53644C20.9266 3.43704 19.5329 2.83165 18.0162 2.83165C16.905 2.83165 15.8848 3.18489 14.9839 3.88145C14.1811 4.50249 13.6219 5.28755 13.294 5.83687C13.1254 6.11935 12.8286 6.28796 12.5 6.28796C12.1713 6.28796 11.8746 6.11935 11.7059 5.83687C11.3783 5.28755 10.819 4.50249 10.016 3.88145C9.1152 3.18489 8.09496 2.83165 6.98393 2.83165Z" fill="#1A1919"/>
+</svg>
+    </button>
+    <button class="product__btn product__bag" type="submit">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.3425 24.1783L21.4424 6.08386C21.4025 5.70506 21.0833 5.41743 20.7024 5.41743H17.131V4.60319C17.131 2.06508 15.066 0 12.5279 0C9.98957 0 7.92448 2.06508 7.92448 4.60319V5.41743H4.35317C3.97227 5.41743 3.65298 5.70506 3.61312 6.08386L1.71302 24.1783C1.69109 24.3879 1.75918 24.5971 1.90013 24.7539C2.04128 24.9105 2.24231 25 2.45307 25H22.6023C22.8132 25 23.0143 24.9105 23.1552 24.7539C23.2965 24.5971 23.3644 24.3879 23.3425 24.1783ZM9.41259 4.60319C9.41259 2.88562 10.8101 1.48811 12.5279 1.48811C14.2454 1.48811 15.6429 2.88562 15.6429 4.60319V5.41743H9.41259V4.60319ZM3.27934 23.5118L5.02322 6.90554H7.92448V8.54529C7.92448 8.95613 8.2577 9.28934 8.66854 9.28934C9.07938 9.28934 9.41259 8.95613 9.41259 8.54529V6.90554H15.6429V8.54529C15.6429 8.95613 15.9761 9.28934 16.387 9.28934C16.7978 9.28934 17.131 8.95613 17.131 8.54529V6.90554H20.0323L21.7762 23.5118H3.27934Z" fill="#1A1919"/>
+</svg>
+    </button>
+  </div>
+</div>
+</div>
+               <a class="more-link" href="#">View more</a>
+            </div>
+         </div>
+      </sectiom>
+
+      <section class="set" id="set">
+  <div class="container">
+    <div class="set__inner">
+      <h2 class="set__title title">Set</h2>
+      <div class="set-slider">
+        <div class="set-slider__l">
+          <img class="set-slider__img-l" src="images/set/slider-l/1.jpg" alt="set image">
+          <img class="set-slider__img-l set-slider__img-l--rev" src="images/set/slider-l/1.jpg" alt="set image">
+          <img class="set-slider__img-l" src="images/set/slider-l/1.jpg" alt="set image">
+        </div>
+        <div class="set-slider__box">
+          <div class="set-slider__s">
+            <div class="set-slider__slide-s-wrap">
+              <div class="set-slider__slide-s">
+                <div class="set-slider__product">
+                  <img class="set-slider__product-img" src="images/set/slider-s/1.jpg" alt="set image">
+                  <h5 class="set-slider__product-title">Tie Guan Yin light Oolong (turquoise tea) No. 800</h5>
+                </div>
+                <div class="set-slider__product">
+                  <img class="set-slider__product-img" src="images/set/slider-s/2.jpg" alt="set image">
+                  <h5 class="set-slider__product-title">Jin Zhen Bai Lian Pressed Shu Puer Tea No. 360</h5>
+                </div>
+              </div>
+            </div>
+            <div class="set-slider__slide-s-wrap">
+              <div class="set-slider__slide-s">
+                <div class="set-slider__product">
+                  <img class="set-slider__product-img" src="images/product/2.jpg" alt="set image">
+                  <h5 class="set-slider__product-title">Cha Zhuan pressed tea Shu Puer 2013 No. 180</h5>
+                </div>
+                <div class="set-slider__product">
+                  <img class="set-slider__product-img" src="images/product/1.jpg" alt="set image">
+                  <h5 class="set-slider__product-title">Shu Puer pressed tea "Ban Zhang Gong Ting" 2017 No. 150</h5>
+                </div>
+              </div>
+            </div>
+            <div class="set-slider__slide-s-wrap">
+              <div class="set-slider__slide-s">
+                <div class="set-slider__product">
+                  <img class="set-slider__product-img" src="images/set/slider-s/1.jpg" alt="set image">
+                  <h5 class="set-slider__product-title">Tie Guan Yin light Oolong (turquoise tea) No. 800</h5>
+                </div>
+                <div class="set-slider__product">
+                  <img class="set-slider__product-img" src="images/set/slider-s/2.jpg" alt="set image">
+                  <h5 class="set-slider__product-title">Jin Zhen Bai Lian Pressed Shu Puer Tea No. 360</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="set-slider__box-link" href="#">
+            <span>Assemble the tea set</span>
+            <div class="arrow-right">
+   <span class="arrow-right__angle"></span>
+</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="blog" id="blog">
+  <div class="container">
+    <h2 class="blog__title title">Blog</h2>
+  </div>
+  <div class="blog__wrap">
+    <div class="blog__overlay">
+      <div class="container">
+      <div class="blog__inner">
+        <ul class="blog__list">
+          <li class="blog__item">
+            <a class="blog__item-link" href="#">
+              <h3 class="blog__item-title">Milk oolong - how the famous tea is made</h3>
+              <p class="blog__item-text">
+                Milk oolong is a Chinese tea, a favorite of Europeans. It was the oolongs that became the first ceremonial teas.
+              </p>
+              <div class="arrow-right">
+   <span class="arrow-right__angle"></span>
+</div>
+            </a>
+          </li>
+          <li class="blog__item">
+            <a class="blog__item-link" href="#">
+              <h3 class="blog__item-title">Tea ceremony in China</h3>
+              <p class="blog__item-text">
+                The tea ceremony originated in China and only a few centuries later its attributes successfully migrated first to Japanese.
+              </p>
+              <div class="arrow-right">
+   <span class="arrow-right__angle"></span>
+</div>
+            </a>
+          </li>
+          <li class="blog__item">
+            <a class="blog__item-link" href="#">
+              <h3 class="blog__item-title">Puerh properties - 16 points of benefit</h3>
+              <p class="blog__item-text">
+                The Chinese are very attentive to physical and emotional health. This is one of the reasons why they drink pu-erh with such pleasure.
+              </p>
+              <div class="arrow-right">
+   <span class="arrow-right__angle"></span>
+</div>
+            </a>
+          </li>
+          <li class="blog__item">
+            <a class="blog__item-link" href="#">
+              <h3 class="blog__item-title">How to store tea at home</h3>
+              <p class="blog__item-text">
+                To keep your tea always tasty, and you can please yourself or surprise guests at any time, store it correctly.
+              </p>
+              <div class="arrow-right">
+   <span class="arrow-right__angle"></span>
+</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="reviews" id="reviews">
+         <div class="container">
+            <div class="reviews__inner">
+               <h2 class="reviews__title title">Reviews</h2>
+               <div class="reviews-slider">
+                  <div class="reviews-slider__item">
+                     <a href="#">
+                        <img class="reviews-slider__img" src="images/reviews/ava-1.jpg" alt="reviewier ava">
+                        <span class="reviews-slider__name">Mary</span>
+                        <p class="reviews-slider__text">
+                           Although I'm not a fan of these teas, this one turned out to be delicious! Delicate taste, pleasant smell. Recommend!
+                        </p>
+                     </a>
+                  </div>
+                  <div class="reviews-slider__item">
+                     <a href="#">
+                        <img class="reviews-slider__img" src="images/reviews/ava-2.jpg" alt="reviewier ava">
+                        <span class="reviews-slider__name">Victor</span>
+                        <p class="reviews-slider__text">
+                           Very good tea, especially for beginners. It has an interesting herbal taste and tones well before the working day. 
+                        </p>
+                     </a>
+                  </div>
+                  <div class="reviews-slider__item">
+                     <a href="#">
+                        <img class="reviews-slider__img" src="images/reviews/ava-3.jpg" alt="reviewier ava">
+                        <span class="reviews-slider__name">Den</span>
+                        <p class="reviews-slider__text">
+                           Rich taste. The milky smell envelops)) The leaves are large, fully open.
+                        </p>
+                     </a>
+                  </div>
+                  <div class="reviews-slider__item">
+                     <a href="#">
+                        <img class="reviews-slider__img" src="images/reviews/ava-4.jpg" alt="reviewier ava">
+                        <span class="reviews-slider__name">Nata</span>
+                        <p class="reviews-slider__text">
+                           The aroma is pleasant. The taste is very delicate. For lovers of tartness and saturation is unlikely to be suitable.
+                        </p>
+                     </a>
+                  </div>
+                  <div class="reviews-slider__item">
+                     <a href="#">
+                        <img class="reviews-slider__img" src="images/reviews/ava-1.jpg" alt="reviewier ava">
+                        <span class="reviews-slider__name">Mary</span>
+                        <p class="reviews-slider__text">
+                           Although I'm not a fan of these teas, this one turned out to be delicious! Delicate taste, pleasant smell. Recommend!
+                        </p>
+                     </a>
+                  </div>
+                  <div class="reviews-slider__item">
+                     <a href="#">
+                        <img class="reviews-slider__img" src="images/reviews/ava-2.jpg" alt="reviewier ava">
+                        <span class="reviews-slider__name">Victor</span>
+                        <p class="reviews-slider__text">
+                           Very good tea, especially for beginners. It has an interesting herbal taste and tones well before the working day. 
+                        </p>
+                     </a>
+                  </div>
+               </div>
+               <a class="more-link" href="#">View more</a>
+            </div>
+         </div>
+      </section>
+
+      <section class="shop" id="shop">
+         <div class="container">
+            <h2 class="shop__title title">Shop</h2>
+         </div>
+      </section>
+      
+   </main>
+
+   <footer class="footer" id="contacts">
+  <div class="container">
+    <h2 class="footer__title title">Contacts</h2>
+    <div class="footer__inner">
+      <div class="footer__item">
+        <a class="logo" href="#home">
+          <img clsss="logo__img" src="images/logo.svg" alt="logo">
+        </a>
+        <div class="footer__open">
+          Opening hours from
+          <span>10:00</span> to <span>22:00</span>
+        </div>
+        <a class="phone" href="tel:+380500505050">+380500505050</a>
+        <div class="footer__address">Kyiv, st. Druzhba 7</div>
+        <div class="footer__social">
+          <a class="footer__social-item" href="#"><svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.5838 7.28001C16.7288 7.28001 17.8041 7.48001 18.8095 7.88001C19.8149 8.28001 20.6946 8.84001 21.4487 9.56001C22.2027 10.28 22.7892 11.12 23.2081 12.08C23.627 13.04 23.8365 14.0667 23.8365 15.16C23.8365 16.2533 23.627 17.2667 23.2081 18.2C22.7892 19.1333 22.2027 19.9733 21.4487 20.72C20.6946 21.4667 19.8149 22.0267 18.8095 22.4C17.8041 22.7733 16.7288 22.9867 15.5838 23.04C14.4387 23.0933 13.3635 22.88 12.3581 22.4C11.3527 21.92 10.4869 21.36 9.76081 20.72C9.03469 20.08 8.4482 19.24 8.00135 18.2C7.5545 17.16 7.33108 16.1467 7.33108 15.16C7.33108 14.1733 7.5545 13.1467 8.00135 12.08C8.4482 11.0133 9.03469 10.1733 9.76081 9.56001C10.4869 8.94668 11.3527 8.38668 12.3581 7.88001C13.3635 7.37334 14.4387 7.17334 15.5838 7.28001ZM15.5838 20.24C16.3099 20.24 16.9941 20.1067 17.6365 19.84C18.2788 19.5733 18.8514 19.2133 19.3541 18.76C19.8568 18.3067 20.2338 17.76 20.4851 17.12C20.7365 16.48 20.8761 15.8267 20.9041 15.16C20.932 14.4933 20.7923 13.8267 20.4851 13.16C20.1779 12.4933 19.8009 11.9467 19.3541 11.52C18.9072 11.0933 18.3347 10.7333 17.6365 10.44C16.9383 10.1467 16.2541 10.0133 15.5838 10.04C14.9135 10.0667 14.2293 10.2 13.5311 10.44C12.8329 10.68 12.2604 11.04 11.8135 11.52C11.3667 12 10.9896 12.5467 10.6824 13.16C10.3752 13.7733 10.2356 14.44 10.2635 15.16C10.2914 15.88 10.4311 16.5333 10.6824 17.12C10.9338 17.7067 11.3108 18.2533 11.8135 18.76C12.3162 19.2667 12.8887 19.6267 13.5311 19.84C14.1734 20.0533 14.8577 20.1867 15.5838 20.24ZM31 7.68001C31.2514 12.6667 31.2514 17.6533 31 22.64C30.9441 23.6 30.7068 24.5067 30.2878 25.36C29.8689 26.2133 29.3243 26.96 28.6541 27.6C27.9838 28.24 27.1878 28.7733 26.2662 29.2C25.3446 29.6267 24.395 29.8533 23.4176 29.88C22.105 29.9333 20.8063 29.9733 19.5216 30C18.2369 30.0267 16.9243 30.04 15.5838 30.04C14.2432 30.04 12.9446 30.0267 11.6878 30C10.4311 29.9733 9.11847 29.9333 7.75 29.88C6.7446 29.8267 5.79505 29.6 4.90135 29.2C4.00766 28.8 3.22568 28.2667 2.55541 27.6C1.88514 26.9333 1.32658 26.1867 0.87973 25.36C0.432883 24.5333 0.195496 23.6267 0.167568 22.64C-0.0558559 17.6533 -0.0558559 12.6667 0.167568 7.68001C0.223423 6.72001 0.460811 5.81334 0.87973 4.96001C1.29865 4.10668 1.85721 3.34668 2.55541 2.68001C3.2536 2.01334 4.03559 1.49334 4.90135 1.12001C5.76712 0.746676 6.71667 0.52001 7.75 0.44001C12.9725 0.20001 18.195 0.20001 23.4176 0.44001C24.423 0.493343 25.3725 0.72001 26.2662 1.12001C27.1599 1.52001 27.9559 2.04001 28.6541 2.68001C29.3523 3.32001 29.8968 4.08001 30.2878 4.96001C30.6788 5.84001 30.9162 6.74668 31 7.68001ZM28.0676 22.48C28.3189 17.6 28.3189 12.7067 28.0676 7.80001C28.0396 7.21334 27.886 6.65334 27.6068 6.12001C27.3275 5.58668 26.9784 5.10668 26.5595 4.68001C26.1405 4.25334 25.6378 3.90668 25.0514 3.64001C24.4649 3.37334 23.8784 3.22668 23.2919 3.20001C22.0072 3.14668 20.7225 3.10668 19.4378 3.08001C18.1532 3.05334 16.8685 3.04001 15.5838 3.04001C14.2991 3.04001 13.0144 3.05334 11.7297 3.08001C10.445 3.10668 9.16036 3.14668 7.87568 3.20001C7.26126 3.22668 6.67478 3.37334 6.11622 3.64001C5.55766 3.90668 5.06892 4.25334 4.65 4.68001C4.23108 5.10668 3.86802 5.58668 3.56081 6.12001C3.2536 6.65334 3.1 7.21334 3.1 7.80001C2.84865 12.7067 2.84865 17.6133 3.1 22.52C3.12793 23.1067 3.28153 23.6667 3.56081 24.2C3.84009 24.7333 4.20315 25.2 4.65 25.6C5.09685 26 5.58559 26.3467 6.11622 26.64C6.64685 26.9333 7.23333 27.08 7.87568 27.08C13.0144 27.32 18.1532 27.32 23.2919 27.08C23.9063 27.0533 24.4928 26.9067 25.0514 26.64C25.6099 26.3733 26.1126 26.0267 26.5595 25.6C27.0063 25.1733 27.3554 24.6933 27.6068 24.16C27.8581 23.6267 28.0117 23.0667 28.0676 22.48ZM23.8365 5.52001C24.3392 5.52001 24.7721 5.69334 25.1351 6.04001C25.4982 6.38668 25.6797 6.80001 25.6797 7.28001C25.6797 7.76001 25.4982 8.17334 25.1351 8.52001C24.7721 8.86668 24.3392 9.04001 23.8365 9.04001C23.3338 9.04001 22.9009 8.86668 22.5378 8.52001C22.1748 8.17334 21.9932 7.76001 21.9932 7.28001C21.9932 6.80001 22.1748 6.38668 22.5378 6.04001C22.9009 5.69334 23.3338 5.52001 23.8365 5.52001Z" fill="#1A1919"/>
+</svg></a>
+          <a class="footer__social-item" href="#"><svg width="31" height="23" viewBox="0 0 31 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M28.9076 0.15123L1.44751 9.51897C-0.426527 10.1849 -0.415685 11.1097 1.10368 11.5221L8.15377 13.4678L24.4656 4.36308C25.2369 3.94793 25.9416 4.17126 25.3624 4.62615L12.1465 15.1777H12.1434L12.1465 15.1791L11.6602 21.6078C12.3727 21.6078 12.6871 21.3187 13.0867 20.9776L16.511 18.0317L23.6339 22.6861C24.9473 23.326 25.8905 22.9972 26.2173 21.6106L30.8931 2.11603C31.3717 0.41841 30.1605 -0.350246 28.9076 0.15123Z" fill="#1A1919"/>
+</svg></a>
+          <a class="footer__social-item" href="#"><svg width="18" height="29" viewBox="0 0 18 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.6934 29V15.7933H17.0244L17.8168 10.6224H11.6934V7.32876C11.6934 5.83663 12.1909 4.81503 14.7532 4.81503H18V0.204916C16.4203 0.0634237 14.8324 -0.00489535 13.2436 0.000272589C8.53149 0.000272589 5.29627 2.40443 5.29627 6.81796V10.6127H0V15.7836H5.30784V29H11.6934Z" fill="#1A1919"/>
+</svg></a>
+        </div>
+      </div>
+      <div class="footer__item">
+        <h5 class="footer__item-title">Information</h5>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a class="footer__list-link menu__item-link" href="#catalog">Catalog</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link menu__item-link" href="#set">Set</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link menu__item-link" href="#blog">Blog</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link menu__item-link" href="#reviews">Reviews</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link menu__item-link" href="#shop">Shop</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link menu__item-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <h5 class="footer__item-title footer__item-title-slide">Tea</h5>
+        <div class="footer__item-box">
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Black and red Tea</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Black flavored Tea</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Green Tea</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Green flavored Tea</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Oolong Tea</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">White Tea</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Puer Sheng Tea</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Puer Shu Tea</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Herbal and fruit Tea</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Elite Tea</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Compositional Tea</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Connected Tea</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+   
+   <script src="js/main.min.js"></script>
+</body>
+</html>
