@@ -1,0 +1,29 @@
+.breadcrumbs {
+  @extend %Montserrat-400;
+  font-size: 18px;
+  line-height: 1.2;
+  padding: 50px 40px 55px;
+    &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    white-space: nowrap;
+    position: relative;
+    &:last-child {
+    color: #999;
+    }
+    &:not(:last-child) {
+      padding-right: 20px;
+      ::after {
+        content: '';
+        width: 8px;
+        height: 11px;
+        background-image: url(../images/icons/breadcrumbs-angle.svg);
+        position: absolute;
+        top: 5px;
+        right: 5px;
+      }
+    } 
+  }
+}

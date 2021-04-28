@@ -5,6 +5,9 @@
   border-radius: 50%;
   position: relative;
   transition: all .3s;
+  &--hover {
+    background: $link-hover;
+  }
   &:hover {
     background: $link-hover;
   }
